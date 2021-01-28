@@ -286,6 +286,11 @@ func (syncer *SyncerSubmodule) Start(ctx context.Context) error {
 		}
 	}()
 
+	err = syncer.ChainModule.Start(ctx)
+	if err != nil {
+		return err
+	}
+
 	return syncer.ChainSyncManager.Start(ctx)
 }
 

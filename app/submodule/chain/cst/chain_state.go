@@ -133,6 +133,10 @@ func (chn *ChainStateReadWriter) GetTipSetState(ctx context.Context, ts *block.T
 	return chn.readWriter.GetTipSetState(ctx, ts)
 }
 
+func (chn *ChainStateReadWriter) SubHeadChanges(ctx context.Context) chan []*chain.HeadChange {
+	return chn.readWriter.SubHeadChanges(ctx)
+}
+
 // Ls returns an iterator over tipsets from head to genesis.
 func (chn *ChainStateReadWriter) Ls(ctx context.Context, key block.TipSetKey) (*chain.TipsetIterator, error) {
 	var (

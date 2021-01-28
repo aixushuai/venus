@@ -48,3 +48,8 @@ func (mockFork *MockFork) GetForkUpgrade() *config.ForkUpgradeConfig {
 		UpgradeClausHeight:       -1,
 	}
 }
+
+func (mockFork *MockFork) Start(ctx context.Context) error {
+
+	return nil
+}

@@ -38,7 +38,7 @@ func Calibration() *NetworkConf {
 				UpgradeCalicoHeight:   92000,
 				UpgradePersianHeight:  92000 + (120 * 60),
 				UpgradeOrangeHeight:   250666, // 2021-01-17T19:00:00Z
-				UpgradeActorsV3Height: 280426, // 2021-01-28T03:00:00Z
+				UpgradeActorsV3Height: 282586, // 2021-01-28T21:00:00Z
 
 				BreezeGasTampingDuration: 120,
 				UpgradeClausHeight:       161386, // 2020-12-17T19:00:00Z
